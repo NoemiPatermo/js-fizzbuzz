@@ -6,15 +6,15 @@ var output = document.getElementById('risultato');
 
 for (var i = 1; i <= 100; i++) {
     
-    if(i % 3 === 0 && i % 5 == 0){
-    output.innerHTML += " FizzBuzz <br>";
+    if(i % 3 == 0 && i % 5 == 0){
+    output.innerHTML += " <br/> FizzBuzz";
     } 
     else if(i % 5 == 0){
-        output.innerHTML += " Buzz <br>";
+        output.innerHTML += "<br/> Buzz ";
     } else if(i % 3 == 0) {
-        output.innerHTML += "Fizz";
+        output.innerHTML += " <br/> Fizz ";
     }else{
-        output.innerHTML += i;
+        output.innerHTML += "<br/>" + i ;
     }
 }
 
